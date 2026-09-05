@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "mysite"
+version = "0.1.0"
+description = "Practical work 20 - Django app published via Docker"
+authors = ["Evgenii Gusev"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+asgiref = "3.6.0"
+Django = "4.2"
+django-debug-toolbar = "4.0.0"
+django-filter = "22.1"
+djangorestframework = "3.14.0"
+Pillow = "9.4.0"
+pytz = "2022.7.1"
+sqlparse = "0.4.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

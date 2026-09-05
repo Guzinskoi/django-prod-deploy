@@ -1,0 +1,16 @@
+services:
+  web:
+    build: .
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      DJANGO_DEBUG: "1"
+      DJANGO_ALLOWED_HOSTS: "*"
+    volumes:
+      - db_data:/app/mysite/data
+      - media_data:/app/mysite/uploads
+
+volumes:
+  db_data:
+  media_data:
